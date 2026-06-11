@@ -33,6 +33,6 @@ async function shorten() {
 
   const data = await res.json()
 
-  shortLink.value = `http://192.168.1.20/${data.short_code}`
+  shortLink.value = `${window.location.origin}/${data.short_code}`
 }
 </script>

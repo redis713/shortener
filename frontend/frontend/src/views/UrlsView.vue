@@ -14,7 +14,7 @@
       <tbody>
         <tr v-for="url in urls" :key="url.short_code">
           <td>
-            <a :href="`http://192.168.1.20/${url.short_code}`" target="_blank">
+            <a :href="getUrl(url.short_code)" target="_blank">
               {{ url.short_code }}
             </a>
           </td>
@@ -31,6 +31,9 @@
 import { ref, onMounted } from 'vue'
 
 const urls = ref([])
+
+const baseUrl = window.location.origin
+const getUrl = (code) => `${baseUrl}/${code}`
 
 onMounted(async () => {
   const res = await fetch('/api/urls')
