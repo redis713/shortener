@@ -5,6 +5,9 @@
 - Docker Compose  
 - Развёртывания приложений на Linux-серверах
 
+<img width="1917" height="1031" alt="shortener1" src="https://github.com/user-attachments/assets/562d9242-5da1-4e5e-bea9-768519060e7b" />
+<img width="1918" height="1032" alt="shortener2" src="https://github.com/user-attachments/assets/e1f82d8e-1c88-4264-98f6-e8520b4e7231" />
+
 ## Возможности
 
 - Создание коротких ссылок
